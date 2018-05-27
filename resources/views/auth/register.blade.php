@@ -9,7 +9,7 @@
                     <h4 class="card-title">Registrar Usuario</h4>
                     <form method="POST" action="{{ route('register') }}">
                             @csrf
-                            <div class="form-group">
+                            <div class="form-group mt-3 pt-3">
                                 <label for="name">Nombre y Apellidos</label>
                                 <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}">
                                 @if ($errors->has('name'))

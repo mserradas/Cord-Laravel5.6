@@ -9,7 +9,7 @@
                     <h4 class="card-title">Iniciar Sessión</h4>
                     <form method="POST" action="{{ route('login') }}">
                             @csrf
-                        <div class="form-group">
+                        <div class="form-group mt-3 pt-3">
                             <label for="email">Correo Electrónico</label>
                             <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}">
                             @if ($errors->has('email'))

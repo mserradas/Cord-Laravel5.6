@@ -36,14 +36,18 @@ return [
     ],
 
     'facebook' => [
-        'client_id' => env('FACEBOOK_ID'),
-        'client_secret' => env('FACEBOOK_SECRET'),
+        //'client_id' => env('FACEBOOK_ID'),
+        //'client_secret' => env('FACEBOOK_SECRET'),
+        'client_id' => '170318843643063',
+        'client_secret' => '4282e2be73c962521b30fdab257fe1bf',
         'redirect' => 'http://localhost:8000/auth/facebook/callback',
     ],
 
     'google' => [
-        'client_id' => env('GOOGLE_ID'),
-        'client_secret' => env('GOOGLE_SECRET'),
+        //'client_id' => env('GOOGLE_ID'),
+        //'client_secret' => env('GOOGLE_SECRET'),
+        'client_id' => '480223348170-75frpqcshvsejs54civ1quih7bganpe2.apps.googleusercontent.com',
+        'client_secret' => '2V0EIGtc4-P7kdN5cz1zJH5j',
         'redirect' => 'http://localhost:8000/auth/google/callback',
     ],
 ];
