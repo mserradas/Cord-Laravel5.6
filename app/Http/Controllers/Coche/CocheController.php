@@ -79,8 +79,6 @@ class CocheController extends Controller
     //Metodo Consultar un coche por id
     public function show($id)
     {   
-        //throw new \Exception("simulando un error");
-
         $coches = Coche::find($id);
         return view('coche.coche-edit', [
             'coches' => $coches,
